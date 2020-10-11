@@ -1,2 +1,2 @@
-# Website
-A clone of the other Confectionery website
+# ToDoReact done with Firebase
+Design taken from 
