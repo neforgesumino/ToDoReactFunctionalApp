@@ -1,0 +1,19 @@
+.RootContainer{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+  }
+.menuP{
+  z-index: 99;
+}
+
+.navs{
+  z-index: 2;
+}
+
+.containerTask{
+  z-index: 0;
+  position: absolute;
+  top:70px;
+  left: 22%;
+}
