@@ -33,7 +33,7 @@ function CardTask({ task }) {
 
   return (
     <>
-      <div className="card  text-center " >
+      <div className="card  text-center ">
 
         <div id="titleHeader" className="container card-header p-0">
           <div className="row">

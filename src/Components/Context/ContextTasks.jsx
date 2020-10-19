@@ -4,7 +4,7 @@ import React, { createContext, useState } from 'react'
 //initializing create context Hook
 export const TasksContext = createContext();
 
-//this is the function that contains the information that will be used in the others components.
+//this is the function that contains the information that will be used in others components.
 export const TasksContextProvider = ({ children }) => {
   //  we created the states Here.
   const [show, setShow] = useState(false);
