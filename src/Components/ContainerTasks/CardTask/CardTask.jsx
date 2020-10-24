@@ -78,7 +78,7 @@ function CardTask({ task }) {
               </div>
             </div>
             <div className='col-9 p-0 m-0 text-left'>
-              <p className='m-0'>Story Points</p>
+              <p className='m-0'>Praise Points</p>
             </div>
           </div>
 

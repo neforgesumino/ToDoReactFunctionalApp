@@ -20,7 +20,7 @@ export const saveTask = (task) => {
 }
 
 /**
- * This function is to get all the task as an sorted array of elements.
+ * This function is to get all the tasks as an sorted array of elements.
  * If there are not elements, will return an empty array.
  * Otherwise, will return a sorted array with all the elements.
  */
@@ -30,7 +30,7 @@ export const getTasks = () => {
   if (!tasks) {
     console.log("there is no elements");
   } else {
-    // instead of split by }, for every match of that pattern, will change to }% to get an unique identifier.
+    // instead of split by }, for every match of that pattern, will change to }% to get a unique identifier.
     tasks = tasks.split("},").join("}%")
     // get all the JSON's with every time that find a %
     const allTasksString = tasks.split('%')

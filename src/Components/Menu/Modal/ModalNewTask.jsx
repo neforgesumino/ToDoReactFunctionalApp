@@ -7,7 +7,6 @@ import { saveTask } from './../LocalStorageCRUD'
 import { STATUS_TO_DO, TITLE, DESCRIPTION, STORY_POINTS } from './../../../constants'
 
 function ModalNewTask() {
-  // we import the statates that we are going to use from context
   const { show, setShow } = useContext(TasksContext);
   let infoTemplate = { title: '', description: '', storyPoints: '', status: STATUS_TO_DO };
 
@@ -50,7 +49,7 @@ function ModalNewTask() {
     if (validationSubmit()) {
       saveTask(infoModal);
     } else {
-      alert('is not possible save because not all the fields are fill')
+      alert('You cannot save because some fields are left empty')
     }
   }
 
@@ -102,7 +101,7 @@ function ModalNewTask() {
                 {
                   checkTitleSelected(TITLE) && (
                     <div className="alert alert-danger" role="alert">
-                      title can not be empty
+                      Title cannot be empty
                     </div>
                   )
                 }
@@ -119,7 +118,7 @@ function ModalNewTask() {
                 {
                   checkDescriptionSelected(DESCRIPTION) && (
                     <div className="alert alert-danger" role="alert">
-                      description can not be empty
+                      Description cannot be empty
                     </div>
                   )
                 }
@@ -127,7 +126,7 @@ function ModalNewTask() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="exampleFormControlSelect1">Story Points</label>
+              <label htmlFor="exampleFormControlSelect1">Praise Points</label>
               <select
                 className="form-control" id="exampleFormControlSelect1"
                 value={infoModal.storyPoints}
@@ -143,7 +142,7 @@ function ModalNewTask() {
               {
                 checkStoryPointsSelected(STORY_POINTS) && (
                   <div className="alert alert-danger" role="alert">
-                    story points can not be empty
+                    Praise Points cannot be empty!
                   </div>
                 )
               }
